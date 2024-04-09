@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <style>
+        .main
+        {
+            width: 1000px;
+            background-color: azure;
+            padding: 20px;
+            font-size: medium;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <!-- <h2>{{ddata}}</h2>
+    <h1>{{firstname}}  {{lastname}}</h1> -->
+
+    <h1>tests</h1>
+    <ul>
+        {% for test in tests %}
+            <li>{{ test.firstname }} {{ test.lastname }} {{test.DOJ}}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Demos</h1>
+    <ul>
+        {% for demo in demos %}
+            <li>{{ demo.department }} {{ demo.salary }}</li>
+        {% endfor %}
+    </ul>
+</div>
+</body>
+</html>
+
+
+
+
+
